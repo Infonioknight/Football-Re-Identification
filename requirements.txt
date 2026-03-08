@@ -1,0 +1,10 @@
+ultralytics
+torch
+torchvision
+opencv-python
+numpy
+Pillow
+scipy
+torchreid
+gdown
+tensorboard

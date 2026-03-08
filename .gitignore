@@ -1,0 +1,11 @@
+tracked_output.mp4
+tracked_output_clip.mp4
+assets
+models
+previous_results
+__pycache__
+tracking_results.csv
+.DS_Store
+tracked_output_osnet.mp4
+legacy
+env
