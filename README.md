@@ -123,3 +123,8 @@ Jersey numbers are unique per player and robust to pose change. Running a lightw
 
 **3. SOTA tracking methods**
 Methods like **BoT-SORT** and **StrongSORT** extend the DeepSORT framework with better Re-ID integration and camera motion compensation — directly relevant to a moving broadcast camera. **RF-DETR** would replace YOLO as the detector, potentially improving detection quality on small/occluded players, though it does not directly address the Re-ID component. Benchmarking these against the current pipeline would give a clear picture of where the gains come from.
+
+**4. Performance and Latency**
+A good amount of my time went into trying to solve the problem, and a little less into making the most optimal approach that performs the best in terms of the latency-accuracy tradeoffs etc. The current approach is lightweight enough to run on a CPU in a decent amount of time (albeit not close to a real-time solution) and I would love to explore more ways I can improve the speed of the system after making it work satisfactorily with an accuracy/performance I'd ideally desire.
+
+I'd also like to try exporting the model and using it in the ONNX runtime, rather than a direct .pth/.pt file to see if and how significantly it impacts the speed of the system.
